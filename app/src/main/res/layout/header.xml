@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/product"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_action_back"
+        android:tag="BackHeader"
+        android:onClick="MenuClick"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profile"
+            android:layout_height="61dp"
+            android:layout_weight="0.34" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Dina Eren"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="DinaEren2506@gmail.com"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="4dp"
+            android:textStyle="italic"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

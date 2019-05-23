@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape5"
+    android:orientation="vertical"
+    tools:context="com.example.finish.Act_Login">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Img_Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:onClick="Img_Back"
+                    android:src="@drawable/ic_action_back"
+                    android:tag="Back" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Application"
+                    android:textSize="22sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:padding="16dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:typeface="serif"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:text="User Login"
+                android:textSize="27sp" />
+
+            <ImageView
+                android:layout_width="146dp"
+                android:layout_height="119dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/login" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/Edt_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/shape2"
+                    android:drawableLeft="@drawable/ic_action_email"
+                    android:drawablePadding="7dp"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:onClick="Login"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/Edt_Pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/shape2"
+                    android:drawablePadding="7dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:onClick="Login"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/Btn_Ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="0.15"
+                    android:background="@drawable/shape7"
+                    android:onClick="BtnOk"
+                    android:typeface="serif"
+                    android:textColor="#383838"
+                    android:text="Ok" />
+
+                <Button
+                    android:id="@+id/Btn_Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.15"
+                    android:textColor="#383838"
+                    android:onClick="Cancel"
+                    android:background="@drawable/shape7"
+                    android:typeface="serif"
+                    android:text="Cancel" />
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:text="forgot password?"
+                android:background="@null"
+                android:textColor="#ae77c7"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

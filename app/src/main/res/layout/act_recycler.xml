@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Act_Recycler">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:scrollbars="vertical"
+    android:background="@android:color/darker_gray"
+    android:layout_marginBottom="100dp"/>
+
+    <EditText
+        android:id="@+id/editText_Insert"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/Btn_Insert"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_Insert"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/editText_Insert"
+        android:background="@drawable/shape7"
+        android:text="Insert" />
+
+    <EditText
+        android:id="@+id/editText_Remove"
+        android:layout_width="53dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/Btn_Remove"
+        android:layout_alignLeft="@+id/Btn_Remove"
+        android:layout_alignEnd="@+id/Btn_Remove"
+        android:layout_alignRight="@+id/Btn_Remove"
+        android:layout_alignBottom="@+id/editText_Insert"
+        android:layout_marginStart="-78dp"
+        android:layout_marginLeft="-78dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginBottom="3dp" />
+
+    <Button
+        android:id="@+id/Btn_Remove"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_Insert"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/editText_Insert"
+        android:background="@drawable/shape7"
+        android:text="Remove" />
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/shape5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to your shop"
+        android:textColor="#1B1B1B"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="40dp"
+        android:text="hei!!!  you can buy any things \n to your application shop"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:layout_width="157dp"
+        android:layout_height="149dp"
+        android:src="@drawable/offer1" />
+
+    <Button
+        android:id="@+id/Btn_Sign"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape7"
+        android:onClick="BtnSign"
+        android:text="sign in" />
+
+    <Button
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape7"
+        android:onClick="BtnLogin"
+        android:id="@+id/Btn_Login"
+        android:text="Login" />
+</LinearLayout>

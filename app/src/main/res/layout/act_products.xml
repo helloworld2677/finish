@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:id="@+id/Drawer">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.Toolbar
+
+                android:layout_width="match_parent"
+                android:elevation="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/Img_Menu"
+                        android:layout_width="34dp"
+                        android:layout_height="28dp"
+                        android:onClick="MenuClick"
+                        android:src="@drawable/ic_action_menu"
+                        android:tag="Menu" />
+
+
+                    <ImageView
+                        android:id="@+id/Img_Sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/sale1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Iran Shop"
+                        android:textSize="22dp"
+                        android:id="@+id/Text_Title"
+                        android:textStyle="italic|bold"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="Iran Shop"
+                        android:textSize="22dp"
+                        android:visibility="gone"
+                        android:textStyle="italic|bold"
+                        android:gravity="center"
+                        android:id="@+id/Edit_Title"
+                        android:drawableLeft="@drawable/ic_action_search1"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:src="@drawable/ic_action_search3"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="28dp"
+                        android:onClick="SearchClick"
+                        android:tag="Search"
+                        android:id="@+id/Img_Search"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Product ID"
+                    android:textSize="27sp"
+                    android:typeface="serif"
+                    android:id="@+id/Text_Id"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Sum: \nCount:"
+                    android:textSize="27sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:typeface="serif"
+                    android:id="@+id/Text_Sum"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Product Name"
+                    android:id="@+id/Edt_ProName"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/ic_action_proname"
+                    android:drawablePadding="10dp"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:layout_marginTop="25dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Price Product"
+                    android:id="@+id/Edt_ProPrice"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/ic_action_pricepro"
+                    android:drawablePadding="10dp"
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:layout_marginTop="25dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Insert"
+                        android:onClick="BtnInsert"
+                        android:id="@+id/Btn_Insert"
+                        android:background="@drawable/shape7"
+                        android:padding="1dp"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Delete"
+                        android:onClick="BtnDelete"
+                        android:id="@+id/Btn_Delete"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape7"
+                        android:paddingRight="3dp"
+                        android:paddingLeft="3dp"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Search"
+                        android:onClick="BtnSearch"
+                        android:id="@+id/Btn_Search"
+                        android:layout_marginLeft="10dp"
+                        android:paddingRight="3dp"
+                        android:paddingLeft="3dp"
+                        android:background="@drawable/shape7"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Update"
+                        android:onClick="BtnUpdate"
+                        android:background="@drawable/shape7"
+                        android:id="@+id/Btn_Update"
+                        android:paddingRight="3dp"
+                        android:paddingLeft="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/Lnr_ListProduct"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Order by id"
+                        android:background="@drawable/shape7"
+                        android:padding="7dp"
+                        android:id="@+id/Btn_Id"
+                        android:onClick="Order"
+                        android:tag="ID"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Order by Name"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/Btn_Name"
+                        android:padding="7dp"
+                        android:onClick="Order"
+                        android:tag="Name"
+                        android:background="@drawable/shape7"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/shape7"
+                        android:text="Or... by Price"
+                        android:onClick="Order"
+                        android:padding="7dp"
+                        android:tag="Price"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/Btn_Price"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/shape7"
+                        android:text="Sum Product"
+                        android:padding="7dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/Btn_Sum"
+                        android:tag="Sum"
+                        android:onClick="Sum_Count"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/shape7"
+                        android:text="Count Product"
+                        android:tag="Count"
+                        android:padding="7dp"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:onClick="Sum_Count"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/Btn_Count"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+<android.support.design.widget.NavigationView
+    android:layout_width="wrap_content"
+    app:menu="@menu/drawermenu"
+    app:headerLayout="@layout/header"
+    app:itemIconTint="#6c6c6c"
+    app:itemTextColor="#6c6c6c"
+    android:layout_gravity="start"
+    android:layout_height="match_parent">
+
+</android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
+

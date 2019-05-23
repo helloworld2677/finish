@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43B5F5</color>
+    <color name="colorPrimaryDark">#1273A7</color>
+    <color name="colorAccent">#5ADFDD</color>
+    <color name="slide_1_bf_color">#f64c73</color>
+    <color name="slide_2_bf_color">#34eda6</color>
+    <color name="slide_3_bf_color">#489dff</color>
+    <color name="slide_4_bf_color">#bc70ff</color>
+    <color name="slide_5_bf_color">#7323dc</color>
+    <color name="primaryDark">#00574B</color>
+    <color name="primary">#008577</color>
+</resources>
