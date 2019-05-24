@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Act_Recycler"></activity>
+        <activity android:name=".Act_res"></activity>
+        <activity android:name=".Act_Recycler" />
         <activity android:name=".Act_Recyclerview" />
         <activity android:name=".Act_ListUser" />
         <activity android:name=".Act_Intro_Slider">
